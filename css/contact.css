@@ -1,0 +1,207 @@
+/*---------Reusable Components----*/
+/*--------------------------------*/
+html{
+    font-size: 20px;
+}
+
+body{
+    background-color: #fff;
+    color:#fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix{zoom:1}
+.clearfix::after{
+    content: "";
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+/*---------------------------------Resets-------------------------*/
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*---------------------------- Helper Classes ---------------------*/
+.pull-left{
+    float:left;
+}
+.pull-right{
+    float: right;
+}
+.centered{
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+/*--------------------------Headings------------------------*/
+h1{
+    font-weight: 400;
+    color: #555;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/*----------------Header------------------------------------*/
+.nav{
+    background-color: #555;
+}
+.logo{
+    display: inline-block;
+    color: #fff;
+    height: 75px;
+    padding: 15px 10px 0;
+    border: 1px solid #fff;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+  to{transform: rotateY(360deg);}
+}
+
+.nav-links{
+    margin-top: 24px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    
+}
+.nav-links li{
+    display: inline-block; /*so the text remains in order when floating right*/
+    margin-right: 15px;
+}
+/*because you are formatting the <a> language "home...."*/
+.link{
+    color:  #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+/*hover is a pseudo class so only : */
+.link:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*chaining elements together, only applies to elements that have both link and active classes*/
+
+.link.active{
+    background-color: #000;
+    color:  #fff;
+}
+
+/*-----------------------------Content------------------------------*/
+.contact-section{
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+.map{
+    height:400px;
+    width: 400px;
+    border: none;
+    margin: 0;
+    margin-left: 20px;
+}
+.contact-form{
+    height: 200px;
+    width:50%;
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+/*------------------------- Footer--------------------- */
+.box-footer {
+    width: calc(100% / 3);
+    height: 125px;
+    float: left;
+}
+.one {
+    background-color: #555;
+    color: #fff;
+}    
+   
+.two {
+    background-color: #555;
+    
+}
+.three {
+    background-color: #555;
+}
+.i-container {
+    width: 125px;
+    margin: 10px auto;
+}
+.i-wrap {
+    width: 36px;
+}
+.icon {
+    color: #fff;
+    font-size: 36px;
+}
+.fa-twitter,
+.fa-facebook-square,
+.fa-linkedin,
+.fa-instagram{
+    transition: color 0.5s;
+    border: none;
+}
+.fa-twitter:hover{
+    color:#55acee;
+    position: relative;
+    animation-name: twitter;
+    animation-duration: 3s;
+}
+@keyframes twitter {
+    0%   {background-color:#55acee; right:0px; top:0px;}
+    100% {background-color:#fff; right:0px; top:0px;}
+}
+
+.fa-facebook-square:hover{
+    color:#3b5998;
+    position: relative;
+    animation-name: facebook;
+    animation-duration: 3s;
+}   
+@keyframes facebook {
+    0%   {background-color:#3b5998; right:0px; top:0px;}
+    100% {background-color:#fff; right:0px; top:0px;}
+}
+
+.fa-linkedin:hover{
+    color: #007bb5;
+    position: relative;
+    animation-name: linkedin;
+    animation-duration: 3s;
+}
+@keyframes linkedin {
+    0%   {background-color:#007bb5; left:0px; top:0px;}
+    100% {background-color:#fff; left:0px; top:0px;}
+}
+
+.fa-instagram:hover{
+    color: #e95950;
+    position: relative;
+    animation-name: instagram;
+    animation-duration: 3s;
+    
+    
+}
+@keyframes instagram {
+    0%   {background-color:#e95950; left:0px; top:0px;}
+    100% {background-color:#fff; left:0px; top:0px;}
+}
+}-------------------*/
+/* /Footer */

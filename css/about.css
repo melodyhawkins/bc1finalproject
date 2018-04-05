@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    color:#fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{ /*to add whitespace*/
+    padding: 80px 0;
+}
+
+.clearfix{zoom:1}
+.clearfix::after{
+    content: "";
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+/*---------------------------------Resets-------------------------*/
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*---------------------------- Helper Classes ---------------------*/
+.pull-left{
+    float:left;
+}
+.pull-right{
+    float: right;
+}
+.centered{
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+/*--------------------------Headings------------------------*/
+h1{
+    font-weight: 300;
+    color: #555;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+p{
+    font-weight: 300;
+    color: #555;
+}
+/*------------------Navbar-----------------------------------*/
+.nav{
+    background-color: #555;
+    height: 150px;
+}    
+.logo{
+    display: inline-block;
+    color: #fff;
+    height: 75px;
+    padding: 15px 10px 0;
+    border: 1px solid #fff;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+  to{transform: rotateY(360deg);}
+}
+.nav-links{
+    margin-top: 24px;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+.nav-links li{
+    display: inline-block; /*so the text remains in order when floating right*/
+    margin-right: 15px;
+}
+/*because you are formatting the <a> language "home...."*/
+.link{
+    color:  #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+/*hover is a pseudo class so only : */
+.link:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*chaining elements together, only applies to elements that have both link and active classes*/
+.link.active{
+    background-color: #000;
+    color:  #fff;
+}
+/*--------------------Main Content------------------*/
+.wrapper{
+    height: auto;
+    float: left;
+    background-color: #fff;
+}
+.wrapper:first-child{
+    width: 40%;
+}
+.wrapper:last-child{
+    width: 60%;
+}
+.profile{
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 125px;
+}
+.about-title{
+    font-size: 24px;
+    margin-top: 25px;
+    font-family: 'Lato';
+}
+.wrapper>p{
+    font-family: 'Lato';
+    text-align: justify;
+    padding-bottom: 10px;
+    margin-right: 50px;
+    /*margin-bottom: 50px;*/
+}
+
+/*--------------------Footer------------------------*/
+.box-footer {
+    width: calc(100% / 3);
+    height: 100px;
+    float: left;
+}
+.one {
+    background-color: #555;
+}    
+.one>p{
+    color: #fff;
+}   
+.two {
+    background-color: #555;
+}
+.three {
+    background-color: #555;
+}
+.i-container {
+    width: 125px;
+    margin: 10px auto;
+}
+.i-wrap {
+    width: 36px;
+}
+.icon {
+    color: #fff;
+    font-size: 36px;
+}
+.fa-twitter,
+.fa-facebook-square,
+.fa-linkedin,
+.fa-instagram{
+    transition: color 0.5s;
+    border: none;
+}
+.fa-twitter:hover{
+    color:#55acee;
+    position: relative;
+    animation-name: twitter;
+    animation-duration: 3s;
+}
+@keyframes twitter {
+    0%   {background-color:#55acee; right:0px; top:0px;}
+    100% {background-color:#fff; right:0px; top:0px;}
+}
+.fa-facebook-square:hover{
+    color:#3b5998;
+    position: relative;
+    animation-name: facebook;
+    animation-duration: 3s;
+}   
+@keyframes facebook {
+    0%   {background-color:#3b5998; right:0px; top:0px;}
+    100% {background-color:#fff; right:0px; top:0px;}
+}
+.fa-linkedin:hover{
+    color: #007bb5;
+    position: relative;
+    animation-name: linkedin;
+    animation-duration: 3s;
+}
+@keyframes linkedin {
+    0%   {background-color:#007bb5; left:0px; top:0px;}
+    100% {background-color:#fff; left:0px; top:0px;}
+}
+.fa-instagram:hover{
+    color: #e95950;
+    position: relative;
+    animation-name: instagram;
+    animation-duration: 3s;
+}
+@keyframes instagram {
+    0%   {background-color:#e95950; left:0px; top:0px;}
+    100% {background-color:#fff; left:0px; top:0px;}
+}
+/*-------------------*/
+/* /Footer */
